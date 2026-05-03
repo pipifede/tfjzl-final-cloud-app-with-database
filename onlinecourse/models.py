@@ -114,7 +114,7 @@ class Question(models.Model):
             return False
 
 class Choice(models.Model):
-    course = models.ForeignKey(
+    question = models.ForeignKey(
         Question, 
         on_delete=models.CASCADE
     )
